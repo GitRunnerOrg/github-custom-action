@@ -5,7 +5,7 @@ RUN apk add --no-cache --upgrade bash
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod  755 /entrypoint.sh
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/entrypoint.sh"]
-#CMD ["bash"]
+#ENTRYPOINT ["/entrypoint.sh"]
+CMD ["./entrypoint.sh"]
 #ENTRYPOINT ["/entrypoint.sh"]
 
